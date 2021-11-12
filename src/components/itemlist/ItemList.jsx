@@ -1,6 +1,6 @@
 import React from "react";
 
-const ItemListContainer = (props) => {
+const ItemListNav = (props) => {
     return (
         <>
             <a className="col">{props.item}</a>
@@ -8,4 +8,4 @@ const ItemListContainer = (props) => {
     )
 }
 
-export default ItemListContainer
+export default ItemListNav

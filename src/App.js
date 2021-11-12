@@ -3,7 +3,8 @@ import './App.css';
 import './css-scss/styles.css';
 import NavBar from './components/navbar/NavBar.jsx';
 import ModalCart from './components/cartmodal/CartModal.jsx';
-import ItemListContainer from './components/itemlist/ItemList.jsx';
+import ItemListNav from './components/itemlist/ItemList.jsx';
+import ItemList from './components/container/ItemListContainer.jsx';
 
 function App() {
   return (
@@ -12,11 +13,11 @@ function App() {
       <header>
         <NavBar />
         <div className="row item">
-          <ItemListContainer item='hombre'/>
-          <ItemListContainer item='mujer'/>
-          <ItemListContainer item='niños'/>
-          <ItemListContainer item='marcas'/>
-          <ItemListContainer item='deportes'/>
+          <ItemListNav item='hombre'/>
+          <ItemListNav item='mujer'/>
+          <ItemListNav item='niños'/>
+          <ItemListNav item='marcas'/>
+          <ItemListNav item='deportes'/>
         </div>
       </header>
 
@@ -25,7 +26,7 @@ function App() {
       {/* Content */}
       <div className="content">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>Created by Lucas Zorzin</p>
+        <ItemList item='Created by Lucas Zorzin'/>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -35,7 +36,7 @@ function App() {
           Learn React
         </a>
       </div>
-      
+
     </div>
   );
 }
