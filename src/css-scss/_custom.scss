@@ -1,0 +1,46 @@
+// CUSTOM
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-padding-top: 67px;
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    background-color: black
+}
+
+ul,
+a {
+    text-decoration: none;
+    list-style: none;
+}
+
+::selection {
+    background: $color !important;
+    color: #fff;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#fp-nav {
+    visibility: hidden;
+}
+
+@media (max-width: 767px) {
+    #fp-nav {
+        display: none !important;
+    }
+}
