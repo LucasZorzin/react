@@ -1,0 +1,26 @@
+:root {
+    --primary: rgb(255, 202, 104);
+}
+.navbar{
+    background-color: black!important;
+}
+.img-logo{
+    width: 40px;
+}
+.container-navbar{
+    padding: 0 10px!important;
+    max-width: 100%!important;
+    margin-left: 2%!important;
+}
+.nav-link{
+    color: white;
+}
+.nav-link:hover{
+    color: var(--primary)!important;
+}
+.nav-link:focus{
+    color: var(--primary)!important;
+}
+.dropdown-item:hover{
+    background-color: rgb(197, 197, 197)!important;
+}

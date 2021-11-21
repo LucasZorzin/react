@@ -1,0 +1,81 @@
+textarea:focus, input[type="text"]:focus, textarea[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus, .form-control:focus, .form-select:focus, .btn-close:focus, .btn:focus {
+  border-color: transparent !important;
+  -webkit-box-shadow: transparent !important;
+          box-shadow: transparent !important;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+.textUppercase {
+  text-transform: uppercase;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-padding-top: 67px;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+ul,
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+::-moz-selection {
+  background: #ffca68 !important;
+  color: #fff;
+}
+
+::selection {
+  background: #ffca68 !important;
+  color: #fff;
+}
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+#fp-nav {
+  visibility: hidden;
+}
+
+@media (max-width: 767px) {
+  #fp-nav {
+    display: none !important;
+  }
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+.content {
+  margin-top: 80px;
+}
+/*# sourceMappingURL=styles.css.map */

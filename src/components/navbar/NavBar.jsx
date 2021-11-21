@@ -1,17 +1,43 @@
 import React from 'react';
-import logo from '../../img/Flash.png';
-import WidgetCart from '../widgetcart/WidgetCart.jsx'
+
+// Bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Container from 'react-bootstrap/Container';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav'
+import NavDropdown from 'react-bootstrap/NavDropdown';
+
+import './NavBar.css';
+import logo from '../../img/puma.png';
+import WidgetCart from '../WidgetCart/WidgetCart.jsx';
 
 function NavBar() {
     return (
-        <nav className="row">
-            <div className="col-8 nav-bar">
-                <a href={'index.html'}><img className="nav-bar__logo" src={logo} /></a>
-                <a href={'index.html'} className="nav-bar__name">FLASH</a>
-            </div>
-            <WidgetCart />
+        <>
+            <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
+                <Container className="container-navbar">
+                    <Navbar.Brand href="/"><img className="img-logo" src={logo}/></Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="me-auto">
+                    <Nav.Link href="#women">Women</Nav.Link>
+                    <Nav.Link href="#men">Men</Nav.Link>
+                    <Nav.Link href="#kids">Kids</Nav.Link>
+                    <NavDropdown title="Sport" id="basic-nav-dropdown" renderMenuOnMount={true}>
+                        <NavDropdown.Item href="#">Running</NavDropdown.Item>
+                        <NavDropdown.Item href="#">Training</NavDropdown.Item>
+                        <NavDropdown.Item href="#">Soccer</NavDropdown.Item>
+                    </NavDropdown>
+                    </Nav>
+                    <WidgetCart />
+                    </Navbar.Collapse>
+                    
+                </Container>
+                
+                
+            </Navbar>
+        </>
 
-        </nav>
     )
 }
 
