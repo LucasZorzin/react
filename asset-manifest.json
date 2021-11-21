@@ -1,24 +1,27 @@
 {
   "files": {
-    "main.css": "/react/static/css/main.ce4cada3.chunk.css",
-    "main.js": "/react/static/js/main.d2cc40c9.chunk.js",
-    "main.js.map": "/react/static/js/main.d2cc40c9.chunk.js.map",
-    "runtime-main.js": "/react/static/js/runtime-main.54c64909.js",
-    "runtime-main.js.map": "/react/static/js/runtime-main.54c64909.js.map",
-    "static/js/2.5df8703e.chunk.js": "/react/static/js/2.5df8703e.chunk.js",
-    "static/js/2.5df8703e.chunk.js.map": "/react/static/js/2.5df8703e.chunk.js.map",
-    "static/js/3.9a62c355.chunk.js": "/react/static/js/3.9a62c355.chunk.js",
-    "static/js/3.9a62c355.chunk.js.map": "/react/static/js/3.9a62c355.chunk.js.map",
+    "main.css": "/react/static/css/main.13c99311.chunk.css",
+    "main.js": "/react/static/js/main.5e431fca.chunk.js",
+    "main.js.map": "/react/static/js/main.5e431fca.chunk.js.map",
+    "runtime-main.js": "/react/static/js/runtime-main.057f5b0f.js",
+    "runtime-main.js.map": "/react/static/js/runtime-main.057f5b0f.js.map",
+    "static/css/2.0a9ec390.chunk.css": "/react/static/css/2.0a9ec390.chunk.css",
+    "static/js/2.95f3faf4.chunk.js": "/react/static/js/2.95f3faf4.chunk.js",
+    "static/js/2.95f3faf4.chunk.js.map": "/react/static/js/2.95f3faf4.chunk.js.map",
+    "static/js/3.0a89da98.chunk.js": "/react/static/js/3.0a89da98.chunk.js",
+    "static/js/3.0a89da98.chunk.js.map": "/react/static/js/3.0a89da98.chunk.js.map",
     "index.html": "/react/index.html",
-    "static/css/main.ce4cada3.chunk.css.map": "/react/static/css/main.ce4cada3.chunk.css.map",
-    "static/js/2.5df8703e.chunk.js.LICENSE.txt": "/react/static/js/2.5df8703e.chunk.js.LICENSE.txt",
-    "static/media/Flash.4a617900.png": "/react/static/media/Flash.4a617900.png",
-    "static/media/logo.6ce24c58.svg": "/react/static/media/logo.6ce24c58.svg"
+    "static/css/2.0a9ec390.chunk.css.map": "/react/static/css/2.0a9ec390.chunk.css.map",
+    "static/css/main.13c99311.chunk.css.map": "/react/static/css/main.13c99311.chunk.css.map",
+    "static/js/2.95f3faf4.chunk.js.LICENSE.txt": "/react/static/js/2.95f3faf4.chunk.js.LICENSE.txt",
+    "static/media/loader.c7d9f081.gif": "/react/static/media/loader.c7d9f081.gif",
+    "static/media/puma.50686fea.png": "/react/static/media/puma.50686fea.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.54c64909.js",
-    "static/js/2.5df8703e.chunk.js",
-    "static/css/main.ce4cada3.chunk.css",
-    "static/js/main.d2cc40c9.chunk.js"
+    "static/js/runtime-main.057f5b0f.js",
+    "static/css/2.0a9ec390.chunk.css",
+    "static/js/2.95f3faf4.chunk.js",
+    "static/css/main.13c99311.chunk.css",
+    "static/js/main.5e431fca.chunk.js"
   ]
 }
