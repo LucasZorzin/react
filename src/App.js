@@ -1,7 +1,7 @@
-import './general-css-scss/styles.css';
+import './general-css/styles.css';
 import NavBar from './components/NavBar/NavBar.jsx';
-import ModalCart from './components/CartModal/CartModal.jsx';
-import ItemList from './components/Container/ItemListContainer.jsx';
+import ModalCart from './components/Cart/CartModal/CartModal.jsx';
+import ItemListContainer from './components/Container/ItemListContainer/ItemListContainer.js';
 
 function App() {
 
@@ -16,7 +16,7 @@ function App() {
 
       {/* Content */}
       <div className="content">
-        <ItemList item='Products' />
+        <ItemListContainer/>
       </div>
 
     </div>

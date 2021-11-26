@@ -1,5 +1,5 @@
 import React from 'react';
-import './WidgetCart.css';
+import './CartWidget.css';
 
 function WidgetCart() {
     return (

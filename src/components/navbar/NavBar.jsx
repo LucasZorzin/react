@@ -9,14 +9,14 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 import './NavBar.css';
 import logo from '../../img/puma.png';
-import WidgetCart from '../WidgetCart/WidgetCart.jsx';
+import WidgetCart from '../Cart/CartWidget/CartWidget';
 
 function NavBar() {
     return (
         <>
             <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
                 <Container className="container-navbar">
-                    <Navbar.Brand href="/"><img className="img-logo" src={logo}/></Navbar.Brand>
+                    <Navbar.Brand href="index.html"><img className="img-logo" src={logo}/></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
