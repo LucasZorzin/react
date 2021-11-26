@@ -2,9 +2,6 @@ import React from 'react';
 import ItemCount from '../../Cart/ItemCount/ItemCount';
 
 export default function Item({ item }) {
-    console.log('este es el prop de item' + item)
-    console.log(item)
-
     return (
         <div key={item.id} className="card w-50 mt-5 mb-5 container" >
             <div className="card-header center">
