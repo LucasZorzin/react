@@ -12,13 +12,18 @@
     max-width: 100%!important;
     margin-left: 2%!important;
 }
-.nav-link{
-    color: white;
+.link{
+    color: rgba(255,255,255,.55);
+    padding: 8px;
+    text-decoration: none;
 }
-.nav-link:hover{
+.link:hover{
     color: var(--primary)!important;
 }
-.nav-link:focus{
+.link:focus{
+    color: var(--primary)!important;
+}
+.active{
     color: var(--primary)!important;
 }
 .dropdown-item:hover{

@@ -23,3 +23,7 @@ width: 70px;
     flex-direction: column;
     text-align: center;
 }
+
+.content{
+    margin-top: 80px;
+}

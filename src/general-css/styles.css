@@ -12,6 +12,10 @@ body {
   text-transform: uppercase;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -73,9 +77,5 @@ a {
 
 .dropdown-toggle::after {
   display: none !important;
-}
-
-.content {
-  margin-top: 80px;
 }
 /*# sourceMappingURL=styles.css.map */
