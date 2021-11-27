@@ -11,7 +11,7 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <header>
-          <NavBar />
+          <NavBar/>
         </header>
 
         {/* Content */}
