@@ -17,11 +17,11 @@ function NavBar() {
         <>
             <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
                 <Container className="container-navbar">
-                    <a href='/'><Navbar.Brand><img className="img-logo" src={logo} /></Navbar.Brand></a>
+                    <a href='/react'><Navbar.Brand><img className="img-logo" src={logo} /></Navbar.Brand></a>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <NavLink to='/' activeClassName="active" className="link">Unisex</NavLink>
+                            <NavLink to='/react' activeClassName="active" className="link">Unisex</NavLink>
                             <NavLink to='/category/women' activeClassName="active" className="link">Women</NavLink>
                             <NavLink to='/category/men' activeClassName="active" className="link">Men</NavLink>
                             <NavLink to='/category/kids' activeClassName="active" className="link">Kids</NavLink>

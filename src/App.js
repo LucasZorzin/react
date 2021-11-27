@@ -16,7 +16,7 @@ function App() {
 
         {/* Content */}
         <Routes>
-          <Route exact path='/' element={<ItemListContainer />}></Route>
+          <Route exact path='/react' element={<ItemListContainer />}></Route>
           <Route path='/cart' element={<ModalCart />}></Route>
           <Route path='/category/:catId' element={<ItemListContainer />}></Route>
           <Route path='/item/:prodId' element={<ItemDetailContainer />}></Route>
