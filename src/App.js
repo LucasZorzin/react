@@ -16,10 +16,10 @@ function App() {
 
         {/* Content */}
         <Routes>
-          <Route exact path='/react' element={<ItemListContainer />}></Route>
-          <Route path='/cart' element={<ModalCart />}></Route>
-          <Route path='/category/:catId' element={<ItemListContainer />}></Route>
-          <Route path='/item/:prodId' element={<ItemDetailContainer />}></Route>
+          <Route path='/react/' element={<ItemListContainer />}></Route>
+          <Route path='/react/cart' element={<ModalCart />}></Route>
+          <Route path='/react/category/:catId' element={<ItemListContainer />}></Route>
+          <Route path='/react/item/:prodId' element={<ItemDetailContainer />}></Route>
         </Routes>
 
       </div>
