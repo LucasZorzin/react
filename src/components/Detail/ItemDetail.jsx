@@ -6,7 +6,7 @@ export const ItemDetail = ({ item }) => {
     return (
         <div className="row mt-5 mx-5 center">
             <div className="col-12 col-lg-6">
-                <img src={item.img} alt={item.name} />
+                <img className="product-img" src={item.img} alt={item.name} />
             </div>
             <div className="col-12 col-lg-6 product-detail">
                 <h3 className="textUppercase bold">{item.name}</h3>
