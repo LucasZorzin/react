@@ -17,7 +17,7 @@ export default function Item({ item }) {
                     {'$' + item.price}
                 </div>
                 <div>
-                    <Link className="text-black" to={`/item/${item.id}`}>Detalle</Link>
+                    <Link className="text-black" to={`/react/item/${item.id}`}>Detalle</Link>
                 </div>
             </div>
             <div className="card-footer center">
