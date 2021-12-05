@@ -36,7 +36,7 @@ const ItemListContainer = () => {
 
     return (
         <>
-            {loading ? <div className="loader"><img src={loader} /></div> : <div className="content"><ItemList list={products} /></div>}
+            {loading ? <div className="loader"><img src={loader} alt="loading" /></div> : <div className="content"><ItemList list={products} /></div>}
         </>
     )
 }

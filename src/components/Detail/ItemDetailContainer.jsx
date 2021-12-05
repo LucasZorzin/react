@@ -15,8 +15,8 @@ const ItemDetailContainer = () => {
     useEffect(() => {
         const getProduct = new Promise((res, rej) => {
             setTimeout(() => {
-                res(stock.find(prod => prod.id == prodId))
-            }, 2000)
+                res(stock.find(prod => prod.id === prodId))
+            }, 200)
         })
         getProduct.then((productFound) => {
             setIndividualProduct(productFound)
@@ -27,7 +27,7 @@ const ItemDetailContainer = () => {
 
     return (
         <>
-            {loading ? <div className="loader"><img src={loader} /></div> : <ItemDetail item={individualProduct} />}
+            {loading ? <div className="loader"><img src={loader} alt="loading" /></div> : <ItemDetail item={individualProduct} />}
         </>
     )
 }

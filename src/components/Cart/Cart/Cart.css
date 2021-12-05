@@ -1,0 +1,9 @@
+.cart{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-left: 15px;
+}
+.description{
+    display: flex;
+    align-items: center;
+}

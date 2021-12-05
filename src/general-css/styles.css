@@ -10,6 +10,7 @@ body {
 
 .textUppercase {
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .bold {
