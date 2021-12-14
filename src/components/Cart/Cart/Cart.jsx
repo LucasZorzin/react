@@ -31,7 +31,7 @@ function Cart() {
                         </div>
                     )}
                     <p className='mx-2 info textUppercase'>TOTAl=  ${total}</p>
-                    <button className="btn btn-dark mb-5 mx-2" onClick={clearCart}>VACIAR</button>
+                    <button className="btn btn-dark mb-5 mx-2" onClick={clearCart}>CLEAR</button>
                     <button className="btn btn-dark mb-5 mx-2" >PURCHASE</button>
                 </div>
                 :
