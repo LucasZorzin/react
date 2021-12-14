@@ -2,8 +2,9 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import loader from '../../img/loader.gif';
-import { stock } from '../stock';
 import { ItemDetail } from './ItemDetail.jsx';
+import dataBase from "../../Firebase/firebase";
+import { doc, getDoc } from "@firebase/firestore";
 
 const ItemDetailContainer = () => {
 
@@ -13,17 +14,23 @@ const ItemDetailContainer = () => {
     const { prodId } = useParams();
 
     useEffect(() => {
-        const getProduct = new Promise((res, rej) => {
-            setTimeout(() => {
-                res(stock.find(prod => prod.id === prodId))
-            }, 200)
-        })
-        getProduct.then((productFound) => {
-            setIndividualProduct(productFound)
-        })
-            .catch(err => console.log(err))
-            .finally(() => setLoading(false))
+
+        const getProduct = async () => {
+
+            if (prodId) {
+                const docRef = doc(dataBase, "stock", prodId);
+                const docSnap = await getDoc(docRef);
+                setIndividualProduct({id: docSnap.id, ...docSnap.data()})
+                setLoading(false)
+            }
+
+        }
+
+        getProduct()
+
+
     }, [prodId])
+
 
     return (
         <>

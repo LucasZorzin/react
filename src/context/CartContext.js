@@ -10,28 +10,33 @@ const CartContextProvider = ({ children }) => {
     const [count, setCount] = useState(1)
 
     const addProduct = (item) => {
-        let existing = cartList.find(e => e.item === item.item)
+        let existing = cartList.find(eCart => eCart.item === item.item)
         if (existing) {
-            cartList.map( (e) => {
-                // if ((e.item === item.item) && (e.cantidad < stock[1].stock)) {     --> Esa ultima parte sería para validar que no se pase del stock indicado en stock.js
-                if (e.item === item.item) {
-                    e.cantidad = e.cantidad + count
+            cartList.map( (eCart) => {
+                if ((eCart.item === item.item) && (eCart.stock < item.stock)) {
+                    eCart.stock = eCart.stock + count
+                    alert("Agregado correctamente")
                 }
-                return e;
+                else{
+                    alert("No hay Stock")
+                }
+                return eCart;
             });
             console.log("REPETIDO:")
         } else {
             setCartList([...cartList, item])
+            alert("Agregado correctamente")
         }
     }
 
     const clearCart = () => {
-        // let newCartList = cartList.filter(e => e.id !== id)
         setCartList([])
     }
 
+    const deleteItem = () => alert("producto eliminado!");
+
     return (
-        <CartContext.Provider value={{ cartList, addProduct, clearCart, count, setCount }}>
+        <CartContext.Provider value={{ cartList, addProduct, clearCart, deleteItem, count, setCount }}>
             {children}
         </CartContext.Provider>
     )

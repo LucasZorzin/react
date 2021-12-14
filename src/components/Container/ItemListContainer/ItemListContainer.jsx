@@ -3,42 +3,50 @@ import { useState, useEffect } from 'react';
 import loader from '../../../img/loader.gif';
 import ItemList from '../ItemList/ItemList.jsx';
 import './ItemListContainer.css';
-import { stock } from '../../stock';
 import { useParams } from 'react-router';
-
-const getProducts = new Promise((res, rej) => {
-    setTimeout(() => {
-        res(stock)
-    }, 700);
-})
+import dataBase from "../../../Firebase/firebase";
+import { collection, getDocs, query, where } from "@firebase/firestore";
 
 const ItemListContainer = () => {
-    const [products, setProducts] = useState([])
-    const [loading, setLoading] = useState(true)
-    const { catId } = useParams()
+
+    const [products, setProducts] = useState([]);
+    const [loading, setLoading] = useState(true);
+
+    const { catId } = useParams();
 
     useEffect(() => {
-        if (catId) {
-            getProducts.then((productFound) => {
-                setProducts(productFound.filter(prod => prod.category === catId));
-            })
-                .catch(err => console.log(err))
-                .finally(() => setLoading(false))
-        } else {
-            getProducts.then((productFound) => {
-                setProducts(productFound);
-            })
-                .catch(err => console.log(err))
-                .finally(() => setLoading(false))
+
+        const itemsCollection = collection(dataBase, "stock")
+        const getProducts = async () => {
+
+
+            if (catId) {
+
+                const q = query((itemsCollection), where("category", "==", catId));
+                const querySnapshot = await getDocs(query(q))
+                setProducts(querySnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() })))
+                setLoading(false)
+
+            } else {
+
+                const querySnapshot = await getDocs(itemsCollection)
+                setProducts(querySnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() })))
+                setLoading(false)
+            }
+
         }
 
-    }, [catId])
+        getProducts()
+
+    }, [catId]);
 
     return (
         <>
             {loading ? <div className="loader"><img src={loader} alt="loading" /></div> : <div className="content"><ItemList list={products} /></div>}
         </>
     )
+
 }
+
 
 export default ItemListContainer

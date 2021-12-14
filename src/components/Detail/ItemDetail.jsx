@@ -4,6 +4,8 @@ import { useState } from "react";
 import './Detail.css';
 import ItemCount from '../Cart/ItemCount/ItemCount';
 import { useCartContext } from '../../context/CartContext';
+// import ItemListContainer from '../Container/ItemListContainer/ItemListContainer';
+// import { stock } from '../stock';
 
 const CartButton = () => {
     return (
@@ -18,10 +20,9 @@ export const ItemDetail = ({ item }) => {
     const [button, setButton] = useState('countButton')
 
     const onAdd = (() => {
-        addProduct({ item: item.id, cantidad: count, img: item.img, price: item.price })
+        addProduct({ item: item.id, stock: count, img: item.img, price: item.price })
         setButton('CartButton')
         setCount(1)
-        alert("Agregado correctamente")
     })
     console.log(cartList)
 

@@ -6,7 +6,6 @@ import { NavLink } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav'
-// import NavDropdown from 'react-bootstrap/NavDropdown';
 
 import './NavBar.css';
 import logo from '../../img/puma.png';
@@ -17,7 +16,7 @@ function NavBar() {
         <>
             <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
                 <Container className="container-navbar">
-                    <a href='/react/'><Navbar.Brand><img className="img-logo" src={logo} alt="logo" /></Navbar.Brand></a>
+                    <NavLink to='/react/'><Navbar.Brand><img className="img-logo" src={logo} alt="logo" /></Navbar.Brand></NavLink>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">

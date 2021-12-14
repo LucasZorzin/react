@@ -79,4 +79,8 @@ a {
 .dropdown-toggle::after {
   display: none !important;
 }
+
+svg {
+  cursor: pointer;
+}
 /*# sourceMappingURL=styles.css.map */
