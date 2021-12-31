@@ -1,11 +1,14 @@
-# PUMA | Forever Faster.
+# PUMA Guitars| Store
 Proyecto de React JS - CoderHouse. 
 Realizado por [Lucas Zorzin](https://github.com/LucasZorzin).
 
 ## Descripción
-El Ecommerce está ambientado exclusivamente en la venta de calzado deportivo de la marca PUMA.
-En el inicio se pueden observar todos los productos disponibles, mientras que en la barra de navegación, se pueden encontrar las categorías disponibles para poder filtrarlos según el género deseado.
+El Ecommerce está ambientado exclusivamente en la venta de guitarras.
 
 ## Tecnologías
 • Se utilizó ReactJS para el armado de la tienda online.
 • Para el estilado del proyecto se utilizó Bootstrap.
+• Se utilizó Firebase para guardar el stock en una base de datos, y poder guardar las compras realizadas.
+
+## Navegación (GIF)
+[Click Here](https://drive.google.com/file/d/1lOc01viJ4XNmoLRkAIB6qDT3lthXxzKn/view?usp=sharing).

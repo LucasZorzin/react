@@ -1,0 +1,23 @@
+.card-header{
+    background-color: #000000;
+    color: rgb(240, 240, 240);
+    font-family: 'Abel', Arial;
+}
+.card-body{
+    background-color: #111111;
+    color: rgb(168, 168, 168);
+    font-family: 'Poppins', Arial;
+
+}
+.products-background{
+    background-color: #fafafa!important;
+    min-height: 91.5vh;
+}
+.products-img{
+    width: 70px;
+    /* filter: drop-shadow(-1px 12px 10px rgba(0, 0, 0, 0.137)); */
+}
+.card{
+    border: 1px solid rgb(0 0 0);
+    background-color: initial;
+}

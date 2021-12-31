@@ -12,6 +12,15 @@ $headings-font-weight: 800;
     text-decoration: none;
 }
 
+.textLowercase{
+    text-transform: lowercase!important;
+    margin: 0 1%;
+}
+
 .bold{
     font-weight: bold;
+}
+
+.small{
+    font-size: .6rem!important;
 }

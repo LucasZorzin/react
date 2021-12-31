@@ -1,5 +1,5 @@
 export const stock = [
-    {id:'Zeus',stock:12,name:"Zeus - Sport Shoes",category:'men',price:15500, img:'https://www.dexter.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-dabra-catalog/default/dw5a37b6b6/products/PU_384297-34/PU_384297-34-1.JPG?sw=400&sh=400'},
+    {id:'Zeus',stock:12,name:"Zeus - Sport Shoes",category:'men',price:15500, img:'../img/puma-black.png'},
     {id:'Roma',stock:5,name:"Roma - Sport Shoes",category:'women',price:15000, img:'https://www.dexter.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-dabra-catalog/default/dwc9e6948c/products/PU_376983-09/PU_376983-09-1.JPG?sw=400&sh=400'},
     {id:'Atenea',stock:7,name:"Atenea - Sport Shoes",category:'women',price:11000, img:'https://www.dexter.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-dabra-catalog/default/dw029782bf/products/PU_193744-09/PU_193744-09-1.JPG?sw=400&sh=400'},
     {id:'Perseo',stock:51,name:"Perseo - Sport Shoes",category:'men',price:15070, img:'https://www.dexter.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-dabra-catalog/default/dw30fa45cf/products/PU_376493-03/PU_376493-03-1.JPG?sw=400&sh=400'},

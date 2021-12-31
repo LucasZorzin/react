@@ -1,3 +1,15 @@
+.dark {
+  background-color: black !important;
+}
+
+.black {
+  color: black;
+}
+
+.black:hover {
+  color: #747474;
+}
+
 textarea:focus, input[type="text"]:focus, textarea[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus, .form-control:focus, .form-select:focus, .btn-close:focus, .btn:focus {
   border-color: transparent !important;
   -webkit-box-shadow: transparent !important;
@@ -13,8 +25,17 @@ body {
   text-decoration: none;
 }
 
+.textLowercase {
+  text-transform: lowercase !important;
+  margin: 0 1%;
+}
+
 .bold {
   font-weight: bold;
+}
+
+.small {
+  font-size: 0.6rem !important;
 }
 
 * {
@@ -31,6 +52,11 @@ html,
 body {
   max-width: 100% !important;
   overflow-x: hidden !important;
+  background-color: #fafafa !important;
+}
+
+#root {
+  background-color: #fafafa;
 }
 
 ul,
@@ -40,12 +66,12 @@ a {
 }
 
 ::-moz-selection {
-  background: #ffca68 !important;
+  background: #fcbdda !important;
   color: #fff;
 }
 
 ::selection {
-  background: #ffca68 !important;
+  background: #fcbdda !important;
   color: #fff;
 }
 
@@ -56,10 +82,10 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  text-align: center !important;
 }
 
 #fp-nav {
@@ -82,5 +108,19 @@ a {
 
 svg {
   cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  background-color: black;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.034);
+          box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.034);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #e2e2e2;
 }
 /*# sourceMappingURL=styles.css.map */

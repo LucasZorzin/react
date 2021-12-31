@@ -25,13 +25,13 @@ const ItemListContainer = () => {
                 const q = query((itemsCollection), where("category", "==", catId));
                 const querySnapshot = await getDocs(query(q))
                 setProducts(querySnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() })))
-                setLoading(false)
+                setTimeout(()=>{setLoading(false)},100);
 
             } else {
 
                 const querySnapshot = await getDocs(itemsCollection)
                 setProducts(querySnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() })))
-                setLoading(false)
+                setTimeout(()=>{setLoading(false)},100);
             }
 
         }

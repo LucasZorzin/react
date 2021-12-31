@@ -9,11 +9,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #fafafa;
     
 }
 
 .loader img{
-width: 70px;
+width: 30px;
 }
 
 .card-body{
@@ -25,5 +26,5 @@ width: 70px;
 }
 
 .content{
-    margin-top: 80px;
+    margin-top: 53px;
 }

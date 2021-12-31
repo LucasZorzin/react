@@ -1,0 +1,189 @@
+.home{
+    height: 100vh;
+    width: 100vw!important;
+    overflow: hidden;
+    background-color: #ffecf5;
+}
+
+.home h3{
+    font-size: 1.7rem;
+    font-family: 'Abel';
+    text-transform: capitalize;
+    font-weight: 700;
+    position: absolute;
+    top: 30%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.home p{
+    font-size: 1rem;
+    font-family: 'Poppins';
+    font-weight: 300;
+    letter-spacing: -0.5px;
+    position: absolute;
+    top: 35%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.home-description{
+    text-align: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 9%;
+}
+
+.logo img{
+    width: 100px;
+}
+
+.guitar1{
+    position: fixed;
+    bottom: 0;
+    width: 45%;
+    height: 100%;
+    left: -100px;
+    object-fit:cover;
+    overflow: hidden;
+}
+
+.guitar2{
+    position: fixed;
+    bottom: -30px;
+    right: -50px;
+    width: 55%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.productos{
+    position: relative;
+    z-index: 2;
+    background-color: #ffecf5;
+}
+
+
+@media (max-width: 1485px) {
+    .guitar1,.guitar2{
+        object-fit: fill;
+    }
+}
+
+.home__content-a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 37%;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+.home__content-a .home__content-a-btn {
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+    font-family: "Poppins", Arial, sans-serif;
+    padding: 0.4rem 1rem;
+    font-size: 0.7rem;
+    font-weight: 400;
+    letter-spacing: 0.7px;
+    border-radius: 0;
+    background-color: #fff 0;
+    border: 1px solid black;
+    color: black;
+    display: inline-block;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    position: absolute;
+    overflow: hidden;
+    transition: 0.4s all ease-in-out;
+}
+.home__content-a .home__content-a-btn:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+}
+.home__content-a .home__content-a-btn.home__content-a-btn--animated::after {
+    content: "";
+    width: 100%;
+    height: 300px;
+    background: black;
+    position: absolute;
+    z-index: 1;
+    top: -300px;
+    left: 0;
+    transition: 0.6s ease-in-out all;
+    border-radius: 0px 0px 300px 300px;
+}
+.home__content-a .home__content-a-btn--animated:hover::after {
+    top: 0;
+}
+.home__content-a-btn span {
+    position: relative;
+    font-size: 0.6rem;
+    z-index: 2;
+    /* padding: 5%; */
+    transition: 0.1s ease all;
+}
+.home__content-a-btn span:hover {
+    color: white;
+}
+
+/* Section img */
+.img1{
+    display: flex;
+    justify-content: flex-end;
+}
+.img1 img{
+    width: 60%;
+}
+.txt1{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+}
+.txt1 h4{
+    font-family: 'Poppins',Arial;
+    font-weight: 400;
+    color: #c38686;
+    font-size: 2.25rem;
+    line-height: 46px;
+}
+
+.img2{
+    display: flex;
+    justify-content: flex-start;
+}
+.img2 img{
+    width: 60%;
+}
+.txt2{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-end;
+}
+.txt2 h4{
+    font-family: 'Poppins',Arial;
+    font-weight: 400;
+    color: #c38686;
+    font-size: 2.25rem;
+    line-height: 46px;
+    margin-left: 40%;
+}

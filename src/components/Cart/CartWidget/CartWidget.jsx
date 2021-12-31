@@ -9,10 +9,10 @@ function WidgetCart() {
     const { cartList } = useCartContext()
     return (
 
-        <Link className="cart" to="/react/cart">
+        <Link className="cart col-3 mx-3 mx-md-1" to="/react/cart">
             <div>
-                <svg type="button" xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="white" className="bi bi-cart2" viewBox="0 0 16 16">
-                    <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" className="bi bi-bag" viewBox="0 0 16 16">
+                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
                 </svg>
             </div>
             {cartList.length>0 && <Badge className='p-1 cart-counter'>{cartList.length}</Badge>}
