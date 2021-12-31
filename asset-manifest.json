@@ -1,27 +1,33 @@
 {
   "files": {
-    "main.css": "/react/static/css/main.6c17f5aa.chunk.css",
-    "main.js": "/react/static/js/main.168c2034.chunk.js",
-    "main.js.map": "/react/static/js/main.168c2034.chunk.js.map",
-    "runtime-main.js": "/react/static/js/runtime-main.8cfde51e.js",
-    "runtime-main.js.map": "/react/static/js/runtime-main.8cfde51e.js.map",
+    "main.css": "/react/static/css/main.14814e71.chunk.css",
+    "main.js": "/react/static/js/main.82ff7bc0.chunk.js",
+    "main.js.map": "/react/static/js/main.82ff7bc0.chunk.js.map",
+    "runtime-main.js": "/react/static/js/runtime-main.34b02181.js",
+    "runtime-main.js.map": "/react/static/js/runtime-main.34b02181.js.map",
     "static/css/2.0a9ec390.chunk.css": "/react/static/css/2.0a9ec390.chunk.css",
-    "static/js/2.ad315e9d.chunk.js": "/react/static/js/2.ad315e9d.chunk.js",
-    "static/js/2.ad315e9d.chunk.js.map": "/react/static/js/2.ad315e9d.chunk.js.map",
-    "static/js/3.4151a46d.chunk.js": "/react/static/js/3.4151a46d.chunk.js",
-    "static/js/3.4151a46d.chunk.js.map": "/react/static/js/3.4151a46d.chunk.js.map",
+    "static/js/2.9884885c.chunk.js": "/react/static/js/2.9884885c.chunk.js",
+    "static/js/2.9884885c.chunk.js.map": "/react/static/js/2.9884885c.chunk.js.map",
+    "static/js/3.d23b7dba.chunk.js": "/react/static/js/3.d23b7dba.chunk.js",
+    "static/js/3.d23b7dba.chunk.js.map": "/react/static/js/3.d23b7dba.chunk.js.map",
     "index.html": "/react/index.html",
     "static/css/2.0a9ec390.chunk.css.map": "/react/static/css/2.0a9ec390.chunk.css.map",
-    "static/css/main.6c17f5aa.chunk.css.map": "/react/static/css/main.6c17f5aa.chunk.css.map",
-    "static/js/2.ad315e9d.chunk.js.LICENSE.txt": "/react/static/js/2.ad315e9d.chunk.js.LICENSE.txt",
+    "static/css/main.14814e71.chunk.css.map": "/react/static/css/main.14814e71.chunk.css.map",
+    "static/js/2.9884885c.chunk.js.LICENSE.txt": "/react/static/js/2.9884885c.chunk.js.LICENSE.txt",
+    "static/media/1.68ae214c.png": "/react/static/media/1.68ae214c.png",
+    "static/media/2.429afd3c.png": "/react/static/media/2.429afd3c.png",
+    "static/media/3.4ab33111.png": "/react/static/media/3.4ab33111.png",
+    "static/media/guitar1.2d3f277b.png": "/react/static/media/guitar1.2d3f277b.png",
+    "static/media/guitar2.ea02cbbb.png": "/react/static/media/guitar2.ea02cbbb.png",
     "static/media/loader.c7d9f081.gif": "/react/static/media/loader.c7d9f081.gif",
-    "static/media/puma.50686fea.png": "/react/static/media/puma.50686fea.png"
+    "static/media/puma-black.d7c90d6c.png": "/react/static/media/puma-black.d7c90d6c.png",
+    "static/media/puma.6d08b0d9.png": "/react/static/media/puma.6d08b0d9.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.8cfde51e.js",
+    "static/js/runtime-main.34b02181.js",
     "static/css/2.0a9ec390.chunk.css",
-    "static/js/2.ad315e9d.chunk.js",
-    "static/css/main.6c17f5aa.chunk.css",
-    "static/js/main.168c2034.chunk.js"
+    "static/js/2.9884885c.chunk.js",
+    "static/css/main.14814e71.chunk.css",
+    "static/js/main.82ff7bc0.chunk.js"
   ]
 }
