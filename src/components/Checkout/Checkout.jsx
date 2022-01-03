@@ -19,7 +19,7 @@ const Checkout = () => {
     const [buyerEmail, setBuyerEmail] = useState('')
     const [buyerCountry, setBuyerCountry] = useState('')
     const [showPaymentOp, setShowPaymentOp] = useState(false)
-    const [style, setStyle] = useState('checkout-container');
+    const [style, setStyle] = useState('checkout-container row');
     const [country, setCountry] = useState([])
     const [email, setEmail] = useState('')
     const [orderID, setOrderID] = useState('')
@@ -45,10 +45,6 @@ const Checkout = () => {
     const fin = () => {
         setLoading(true)
         setTimeout(() => { setLoading(false) }, 1000);
-        var form = document.querySelector('.buyer-form');
-        form.classList.add("ocultar")
-        var form = document.querySelector('.payment-options');
-        form.classList.add("ocultar")
         setStyle('fin');
     }
 
@@ -83,34 +79,34 @@ const Checkout = () => {
 
     return (
         <>
-            <div className={style}>
+            <div>
                 <p className="px-3 cart cart-title">CHECKOUT</p>
-
-                {cartList == '' ? <div className='ocultar'><p className="center mt-5 pt-5 cart-text">Your cart is empty.</p>
+                <div className={style}>
+                {cartList == '' ? <div><p className="center mt-5 pt-5 cart-text">Your cart is empty.</p>
                     <NavLink to='/react/' className="center cart-text black">Go to home</NavLink></div> :
-                    <div className='row'>
+                    <div className='checkout-container row'>
                         <div className='col-5 px-5'>
                             <span className='title-order'>PERSONAL INFORMATION</span>
                             <form className="buyer-form" onSubmit={buttonPayment}>
-                                <div className="col-2" id="buyer-name">
+                                <div className="col-7" id="buyer-name">
                                     <label htmlFor="name">Name: </label>
                                     <input type="text" name="name" onChange={event => setBuyerName(event.target.value)} placeholder="" required />
                                 </div>
 
-                                <div className="col-2" id="buyer-surname">
+                                <div className="col-7" id="buyer-surname">
                                     <label htmlFor="lastName">Last Name: </label>
                                     <input type="text" name="lastName" onChange={event => setBuyerSurname(event.target.value)} placeholder="" required />
                                 </div>
 
-                                <div className="col-2" id="buyer-email">
+                                <div className="col-7" id="buyer-email">
                                     <label htmlFor="email">E-Mail: </label>
                                     <input type="email" name="email" onChange={event => setBuyerEmail(event.target.value)} placeholder="name@example.com" required />
                                 </div>
-                                <div className="col-3" id="buyer-re-email">
+                                <div className="col-7" id="buyer-re-email">
                                     <label htmlFor="email">Confirm E-Mail: </label>
                                     <input type="email" name="email" placeholder="name@example.com" onChange={event => setEmail(event.target.value)} required />
                                 </div>
-                                <div className="col-2" id="buyer-country">
+                                <div className="col-7" id="buyer-country">
                                     <label htmlFor="country">Country: </label>
                                     <select name="country" onChange={event => setBuyerCountry(event.target.value)} required>
                                         {country.map(e =>
@@ -140,8 +136,8 @@ const Checkout = () => {
                             }
 
                         </div>
-                        <div className='col-7'>
-                            <h4 className='title-order'>My order</h4>
+                        <div className='col-5'>
+                            <h4 className='title-order px-3'>My order</h4>
                             {cartList.map(prod =>
 
                                 // {prod.cantidad} x {prod.item}
@@ -167,6 +163,7 @@ const Checkout = () => {
 
 
                     </div>}
+                    </div>
             </div>
 
             {loading ? <div className="loader"><img src={loader} alt="loading" /></div> :

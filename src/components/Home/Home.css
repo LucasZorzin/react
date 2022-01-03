@@ -91,16 +91,13 @@
     margin: auto;
 }
 .home__content-a .home__content-a-btn {
-    background-color: transparent;
-    border: 2px solid black;
-    color: black;
     font-family: "Poppins", Arial, sans-serif;
     padding: 0.4rem 1rem;
     font-size: 0.7rem;
     font-weight: 400;
     letter-spacing: 0.7px;
     border-radius: 0;
-    background-color: #fff 0;
+    background-color: transparent;
     border: 1px solid black;
     color: black;
     display: inline-block;
@@ -187,3 +184,73 @@
     line-height: 46px;
     margin-left: 40%;
 }
+
+/* SMARTPHONE */
+@media (max-width: 576px) {
+    .logo{
+        margin-top: 40%;
+    }
+    .home__content-a {
+        position: initial;
+    }
+    #parallax{
+        padding-top: 30%;
+    }
+    .home h3{
+        position: initial;
+    }
+    .home p{
+        position: initial;
+    }
+    .guitar2 {
+        position: relative;
+        bottom: -65%;
+        right: -54%;
+        width: 65%;
+        height: 35%;
+        object-fit: fill;
+        overflow: hidden;
+    }
+    .guitar1 {
+        position: absolute;
+        bottom: 0;
+        width: 45%;
+        height: 25%;
+        left: -5%;
+        object-fit: fill;
+        overflow: hidden;
+    }
+    .img1 img {
+        width: 100%;
+    }
+    .img2 img {
+        width: 100%;
+    }
+    .responsive-home{
+        transform: translate(0, -105%);
+    }
+    .productos-responsive{
+        padding-top: 85px !important;
+    }
+    .productos{
+        padding: 0 5%;
+    }
+
+    .txt2 {
+        transform: translate(2%, 0px);
+    }
+    .txt1 h4, .txt2 h4{
+        font-size: 2rem;
+    }
+    
+
+
+}
+
+/* TABLET
+@media (max-width: 768px) {
+
+
+
+
+} */

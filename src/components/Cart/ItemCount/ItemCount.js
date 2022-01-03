@@ -1,6 +1,9 @@
-// import { useState } from "react";
+import React from "react";
 import { useCartContext } from "../../../context/CartContext";
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
+const customId = "custom-id-yes";
 
 const ItemCount = ({ stock, onAdd }) => {
 
@@ -10,7 +13,8 @@ const ItemCount = ({ stock, onAdd }) => {
         if (count < stock) {
             setCount(count + 1)
         } else {
-            alert('No hay suficiente stock.');
+            const notify = () => toast.error("Not enough stock.", {toastId: customId})
+            notify();
         }
     }
 
@@ -36,6 +40,9 @@ const ItemCount = ({ stock, onAdd }) => {
                 <button class="stockBtn" onClick={sumarContador}>+</button>
             </div>
             <div className="countButtons mx-3"><button className='px-2 stockBtn' onClick={onAdd}>Add to cart 🛒</button></div>
+            <ToastContainer
+                autoClose={2000}>
+            </ToastContainer>
         </>
     )
 }

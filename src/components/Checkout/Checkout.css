@@ -1,9 +1,15 @@
-.ocultar{
+.checkout-container{
+    display: flex;
+    justify-content: center;
+}
+.fin{
     visibility: hidden;
     opacity: 0;
     display: none;
 }
-
+.fin{
+    background-color: red;
+}
 .order-confirm{
     display: flex;
     justify-content: center;
@@ -29,11 +35,20 @@ input{
     background-color: transparent;
     outline: 2px solid #ced4da;
     transition: 0.2s all ease;
+    width: -webkit-fill-available;
 }
 input:focus, input:active{
     outline: 2px solid #fa43de9d;
 }
-
+select{
+    width: -webkit-fill-available;
+    background-color: transparent;
+    outline: 2px solid #ced4da;
+    border: none;
+}
+select:focus, select:active{
+    outline: 2px solid #fa43de9d;
+}
 form div{
     padding: 10px 0;
 }
