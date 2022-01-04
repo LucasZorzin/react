@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/react/static/css/main.409334c4.chunk.css",
-    "main.js": "/react/static/js/main.0bcf0ef1.chunk.js",
-    "main.js.map": "/react/static/js/main.0bcf0ef1.chunk.js.map",
+    "main.css": "/react/static/css/main.add1746a.chunk.css",
+    "main.js": "/react/static/js/main.bcfa3d38.chunk.js",
+    "main.js.map": "/react/static/js/main.bcfa3d38.chunk.js.map",
     "runtime-main.js": "/react/static/js/runtime-main.ecb5e32e.js",
     "runtime-main.js.map": "/react/static/js/runtime-main.ecb5e32e.js.map",
     "static/css/2.9f0b74ee.chunk.css": "/react/static/css/2.9f0b74ee.chunk.css",
@@ -12,15 +12,15 @@
     "static/js/3.66688eed.chunk.js.map": "/react/static/js/3.66688eed.chunk.js.map",
     "index.html": "/react/index.html",
     "static/css/2.9f0b74ee.chunk.css.map": "/react/static/css/2.9f0b74ee.chunk.css.map",
-    "static/css/main.409334c4.chunk.css.map": "/react/static/css/main.409334c4.chunk.css.map",
+    "static/css/main.add1746a.chunk.css.map": "/react/static/css/main.add1746a.chunk.css.map",
     "static/js/2.d314423b.chunk.js.LICENSE.txt": "/react/static/js/2.d314423b.chunk.js.LICENSE.txt",
     "static/media/1.68ae214c.png": "/react/static/media/1.68ae214c.png",
     "static/media/2.429afd3c.png": "/react/static/media/2.429afd3c.png",
-    "static/media/3-smartphone.f65a9b23.png": "/react/static/media/3-smartphone.f65a9b23.png",
+    "static/media/3-smartphone.8e8327bb.png": "/react/static/media/3-smartphone.8e8327bb.png",
     "static/media/3.4ab33111.png": "/react/static/media/3.4ab33111.png",
-    "static/media/guitar1-smartphone.09a4ef0e.png": "/react/static/media/guitar1-smartphone.09a4ef0e.png",
+    "static/media/guitar1-smartphone.06b21c71.png": "/react/static/media/guitar1-smartphone.06b21c71.png",
     "static/media/guitar1.2d3f277b.png": "/react/static/media/guitar1.2d3f277b.png",
-    "static/media/guitar2-smartphone.9228fa78.png": "/react/static/media/guitar2-smartphone.9228fa78.png",
+    "static/media/guitar2-smartphone.c09ce838.png": "/react/static/media/guitar2-smartphone.c09ce838.png",
     "static/media/guitar2.ea02cbbb.png": "/react/static/media/guitar2.ea02cbbb.png",
     "static/media/loader.c7d9f081.gif": "/react/static/media/loader.c7d9f081.gif",
     "static/media/puma-black.d7c90d6c.png": "/react/static/media/puma-black.d7c90d6c.png",
@@ -30,7 +30,7 @@
     "static/js/runtime-main.ecb5e32e.js",
     "static/css/2.9f0b74ee.chunk.css",
     "static/js/2.d314423b.chunk.js",
-    "static/css/main.409334c4.chunk.css",
-    "static/js/main.0bcf0ef1.chunk.js"
+    "static/css/main.add1746a.chunk.css",
+    "static/js/main.bcfa3d38.chunk.js"
   ]
 }
