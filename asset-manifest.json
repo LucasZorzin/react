@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/react/static/css/main.5044de75.chunk.css",
-    "main.js": "/react/static/js/main.c841ccaa.chunk.js",
-    "main.js.map": "/react/static/js/main.c841ccaa.chunk.js.map",
-    "runtime-main.js": "/react/static/js/runtime-main.ecb5e32e.js",
-    "runtime-main.js.map": "/react/static/js/runtime-main.ecb5e32e.js.map",
+    "main.js": "/react/static/js/main.de7f6f52.chunk.js",
+    "main.js.map": "/react/static/js/main.de7f6f52.chunk.js.map",
+    "runtime-main.js": "/react/static/js/runtime-main.846a8bd6.js",
+    "runtime-main.js.map": "/react/static/js/runtime-main.846a8bd6.js.map",
     "static/css/2.9f0b74ee.chunk.css": "/react/static/css/2.9f0b74ee.chunk.css",
-    "static/js/2.d314423b.chunk.js": "/react/static/js/2.d314423b.chunk.js",
-    "static/js/2.d314423b.chunk.js.map": "/react/static/js/2.d314423b.chunk.js.map",
-    "static/js/3.66688eed.chunk.js": "/react/static/js/3.66688eed.chunk.js",
-    "static/js/3.66688eed.chunk.js.map": "/react/static/js/3.66688eed.chunk.js.map",
+    "static/js/2.1c2bf5a7.chunk.js": "/react/static/js/2.1c2bf5a7.chunk.js",
+    "static/js/2.1c2bf5a7.chunk.js.map": "/react/static/js/2.1c2bf5a7.chunk.js.map",
+    "static/js/3.b4242526.chunk.js": "/react/static/js/3.b4242526.chunk.js",
+    "static/js/3.b4242526.chunk.js.map": "/react/static/js/3.b4242526.chunk.js.map",
     "index.html": "/react/index.html",
     "static/css/2.9f0b74ee.chunk.css.map": "/react/static/css/2.9f0b74ee.chunk.css.map",
     "static/css/main.5044de75.chunk.css.map": "/react/static/css/main.5044de75.chunk.css.map",
-    "static/js/2.d314423b.chunk.js.LICENSE.txt": "/react/static/js/2.d314423b.chunk.js.LICENSE.txt",
+    "static/js/2.1c2bf5a7.chunk.js.LICENSE.txt": "/react/static/js/2.1c2bf5a7.chunk.js.LICENSE.txt",
     "static/media/1.68ae214c.png": "/react/static/media/1.68ae214c.png",
     "static/media/2.429afd3c.png": "/react/static/media/2.429afd3c.png",
     "static/media/3-smartphone.8e8327bb.png": "/react/static/media/3-smartphone.8e8327bb.png",
@@ -27,10 +27,10 @@
     "static/media/puma.6d08b0d9.png": "/react/static/media/puma.6d08b0d9.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.ecb5e32e.js",
+    "static/js/runtime-main.846a8bd6.js",
     "static/css/2.9f0b74ee.chunk.css",
-    "static/js/2.d314423b.chunk.js",
+    "static/js/2.1c2bf5a7.chunk.js",
     "static/css/main.5044de75.chunk.css",
-    "static/js/main.c841ccaa.chunk.js"
+    "static/js/main.de7f6f52.chunk.js"
   ]
 }
