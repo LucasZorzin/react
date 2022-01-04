@@ -86,6 +86,7 @@
 @media (max-width: 576px) {
     .product-title{
         font-size: 2rem;
+        white-space: break-spaces;
     }
     .product-description{
         font-size: 0.8rem;
