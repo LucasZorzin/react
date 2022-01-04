@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Button } from 'react-bootstrap';
+import { OverlayTrigger, Tooltip, Button } from 'react-bootstrap';
 import { Link, NavLink } from 'react-router-dom';
 import Payment from '../Payment/Payment';
 import { useCartContext } from '../../context/CartContext';
@@ -119,11 +119,13 @@ const Checkout = () => {
                                     <div className="select-payment mb-3 mb-lg-0">
                                         {(email.length > 1 && buyerEmail === email) ?
                                             <input type="submit" className="btn btn-sm btn-pink" value="Choose payment method" /> :
-                                            <span className="d-inline-block">
-                                                <Button className="btn btn-sm btn-danger" disabled style={{ pointerEvents: 'none' }}>
-                                                    Choose payment method
-                                                </Button>
-                                            </span>
+                                            <OverlayTrigger placement="right" overlay={<Tooltip id="tooltip-disabled">Complete the required fields.</Tooltip>}>
+                                                <span className="d-inline-block">
+                                                    <Button className="btn btn-sm btn-danger" disabled style={{ pointerEvents: 'none' }}>
+                                                        Choose payment method
+                                                    </Button>
+                                                </span>
+                                            </OverlayTrigger>
                                         }
                                     </div>
                                 </form>
