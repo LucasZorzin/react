@@ -39,7 +39,6 @@ function NavBar() {
                             <span></span>
                             <span></span>
                             <span></span>
-                            <span></span>
                         </div>
                 </div>
                 </Container>

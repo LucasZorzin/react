@@ -29,8 +29,8 @@ export const ItemDetail = ({ item }) => {
 
     return (
         <div>
-        <div className="row mt-3 mx-5 center detail">
-            <div className="mt-3 col-12 col-lg-5">
+        <div className="row my-5 mt-md-3 mx-5 center detail">
+            <div className="center mt-3 col-12 col-lg-5">
                 <img className="product-img" src={item.img} alt={item.name} />
             </div>
             <div className="col-12 col-lg-7 product-detail">

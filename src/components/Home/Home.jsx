@@ -3,10 +3,13 @@ import { NavLink } from 'react-router-dom';
 import './Home.css';
 import guitar1 from '../../img/guitar1.png';
 import guitar2 from '../../img/guitar2.png';
+import guitar1Cel from '../../img/guitar1-smartphone.png';
+import guitar2Cel from '../../img/guitar2-smartphone.png';
 import logo from '../../img/puma-black.png';
 import i1 from '../../img/1.png';
 import i2 from '../../img/2.png';
 import i3 from '../../img/3.png';
+import i3Cel from '../../img/3-smartphone.png';
 import Footer from '../Footer/Footer';
 
 const HomePage = () => {
@@ -27,6 +30,8 @@ const HomePage = () => {
             <section id='parallax' className='home'>
                 <img src={guitar1} data-speed="-5" className='layer guitar1' alt='guitar puma music' />
                 <img src={guitar2} data-speed="4" className='layer guitar2' alt='guitar puma music' />
+                <img src={guitar1Cel} data-speed="-5" className='layer guitar1Cel' alt='guitar puma music' />
+                <img src={guitar2Cel} data-speed="4" className='layer guitar2Cel' alt='guitar puma music' />
                 <div className='responsive-home'>
                     <div className='logo'><img src={logo} alt='puma music logo' /></div>
                     <h3>With music, life is better.</h3>
@@ -56,7 +61,8 @@ const HomePage = () => {
 
             <section className='productos pt-5 pb-5 row'>
                 <div className='col-6 img1'>
-                    <img src={i3} alt='guitar' />
+                    <img className='img3Pc' src={i3} alt='guitar' />
+                    <img className='img3Cel' src={i3Cel} alt='guitar' />
                 </div>
                 <div className='col-4 txt1'>
                     <h4>The design we’ve been dreaming of.</h4>

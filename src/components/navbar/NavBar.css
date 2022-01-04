@@ -1,50 +1,50 @@
 :root {
     --primary: rgb(255, 255, 255);
 }
-.navbar{
-    background-color: black!important;
+.navbar {
+    background-color: black !important;
 }
-.img-logo{
+.img-logo {
     width: 45px;
 }
-.container-navbar{
+.container-navbar {
     /* padding: 0 10px!important; */
-    max-width: 100%!important;
-    justify-content: flex-start!important;
-    flex-wrap: nowrap!important;
+    max-width: 100% !important;
+    justify-content: flex-start !important;
+    flex-wrap: nowrap !important;
 }
-.link{
+.link {
     color: rgba(177, 177, 177, 0.767);
     padding: 8px;
     text-decoration: none;
-    font-family: 'Abel', Arial;
+    font-family: "Abel", Arial;
 }
-.link:hover{
-    color: var(--primary)!important;
+.link:hover {
+    color: var(--primary) !important;
 }
-.link:focus{
-    color: var(--primary)!important;
+.link:focus {
+    color: var(--primary) !important;
 }
-.active{
-    color: var(--primary)!important;
+.active {
+    color: var(--primary) !important;
 }
-.dropdown-item:hover{
-    background-color: rgb(197, 197, 197)!important;
+.dropdown-item:hover {
+    background-color: rgb(197, 197, 197) !important;
 }
-.navbar-brand{
+.navbar-brand {
     margin-right: 0;
 }
 
-.titles{
+.titles {
     display: flex;
     align-items: center;
-    width: 100vw!important;
+    width: 100vw !important;
 }
 
-.title{
+.title {
     text-decoration: none;
-    color: white!important;
-    font-family: 'Abel', Arial;
+    color: white !important;
+    font-family: "Abel", Arial;
     font-size: 1.1rem;
     letter-spacing: -1px;
     font-weight: 300;
@@ -52,17 +52,17 @@
     padding: 0;
 }
 
-.btn-navbar{
+.btn-navbar {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 100vw!important;
+    width: 100vw !important;
 }
 
-.nav-items{
+.nav-items {
     background-color: rgb(53, 53, 53);
     position: fixed;
-    z-index: 2;
+    /* z-index: 2; */
     height: 40%;
     top: 6px;
     right: 12px;
@@ -75,30 +75,28 @@
     padding-left: 1.5%;
     opacity: 0;
     visibility: hidden;
-    transition: all .4s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
-.open-nav{
+.open-nav {
     opacity: 1;
     visibility: visible;
 }
-.close-nav{
+.close-nav {
     opacity: 0;
     visibility: hidden;
 }
 
-@media screen and (min-width:991px) and (max-width: 1112px) {
-    .puma-logo-txt{
+@media screen and (min-width: 991px) and (max-width: 1112px) {
+    .puma-logo-txt {
         padding-left: 2%;
     }
 }
-
 
 /* BTN */
 #nav-icon {
     width: 35px;
     height: 11px;
-    /* margin: 50px auto; */
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -108,7 +106,6 @@
     -o-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
     cursor: pointer;
-    z-index: 50;
 }
 
 #nav-icon span {
@@ -120,6 +117,7 @@
     border-radius: 8px;
     opacity: 1;
     left: 0;
+    z-index: 5;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -133,28 +131,40 @@
 
 #nav-icon span:nth-child(1) {
     top: 0px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
 }
 
-#nav-icon span:nth-child(2),
-#nav-icon span:nth-child(3) {
+#nav-icon span:nth-child(2) {
     top: 8px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
 }
 
-#nav-icon span:nth-child(4) {
+#nav-icon span:nth-child(3) {
     top: 16px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
 }
 
 #nav-icon.open span:nth-child(1) {
-    top: 18px;
-    width: 0%;
-    left: 50%;
-}
-
-#nav-icon.open span:nth-child(2) {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
+    top: -3px;
+    left: 5px;
+}
+
+#nav-icon.open span:nth-child(2) {
+    width: 0%;
+    opacity: 0;
 }
 
 #nav-icon.open span:nth-child(3) {
@@ -162,18 +172,13 @@
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
+    top: 10px;
+    left: 5px;
 }
-
-#nav-icon.open span:nth-child(4) {
-    top: 18px;
-    width: 0%;
-    left: 50%;
-}
-
 
 /* SMARTPHONE */
 @media (max-width: 576px) {
-    .nav-items{
+    .nav-items {
         width: 50%;
     }
 }

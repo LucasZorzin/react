@@ -10,10 +10,10 @@ function Cart() {
         <>
             <div className='min-height'>
                 {cartList.length > 0 ?
-                    <div className="mt-5">
-                        <p className="px-3 cart cart-title">CART</p>
-                        <div className='row mx-5 px-5 row-resume'>
-                            <div className='col-7 center-cart'>
+                    <div className="mt-5 pt-3 pt-lg-0">
+                        <p className="px-3 mb-4 mb-lg-0 cart cart-title">CART</p>
+                        <div className='row mx-0 mx-lg-5 px-5 row-resume'>
+                            <div className='col-12 col-md-7 center-cart'>
                                 {cartList.map(prod =>
 
                                     // {prod.cantidad} x {prod.item}
@@ -43,7 +43,7 @@ function Cart() {
                                 )}
                             </div>
 
-                            <div className='col-4 resume'>
+                            <div className='col-12 col-md-4 mb-5 resume'>
                                 <ul>
                                     <li className='resume__1'>
                                         <span>PRODUCTS:  {cartList.length}</span>
@@ -76,8 +76,8 @@ function Cart() {
                         </div>
                     </div>
                     :
-                    <div className="mt-5">
-                        <p className="px-3 cart cart-title">CART</p>
+                    <div className="mt-5 pt-3 pt-lg-0">
+                        <p className="px-3 mb-4 mb-lg-0 cart cart-title">CART</p>
                         <p className="center mt-5 pt-5 cart-text">Your cart is empty.</p>
                         <NavLink to='/react/' className="center cart-text black">Go to home</NavLink>
                     </div>

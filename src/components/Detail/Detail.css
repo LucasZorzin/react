@@ -79,3 +79,18 @@
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
 }
+
+
+
+/* SMARTPHONE */
+@media (max-width: 576px) {
+    .product-title{
+        font-size: 2rem;
+    }
+    .product-description{
+        font-size: 0.8rem;
+    }
+    .detail img{
+        width: 380px;
+    }
+}

@@ -1,4 +1,4 @@
-# PUMA Guitars| Store
+# PUMA Guitars | Store
 Proyecto de React JS - CoderHouse. 
 Realizado por [Lucas Zorzin](https://github.com/LucasZorzin).
 

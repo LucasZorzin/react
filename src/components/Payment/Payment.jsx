@@ -21,7 +21,7 @@ const Payment = ({ createOrder, fin }) => {
                 <Accordion.Item eventKey="0">
                     <Accordion.Header>
                         <label htmlFor="cash" className="label-icon">Cash <i className="fas fa-money-bill" /></label>
-                        <input className="mx-2" type="radio" name="payment" value="cash" />
+                        <input className="mx-2" style={{width: 'auto'}} type="radio" name="payment" value="cash" />
                     </Accordion.Header>
                     <Accordion.Body>
                         You will have to pay ${totalPrice} on the day of pick-up.
@@ -30,7 +30,7 @@ const Payment = ({ createOrder, fin }) => {
                 <Accordion.Item eventKey="1">
                     <Accordion.Header>
                         <label htmlFor="mercadopago" className="label-icon">Mercado Pago <i className="fas fa-money-bill" /></label>
-                        <input className="mx-2" type="radio" name="payment" value="mercadopago" />
+                        <input className="mx-2" style={{width: 'auto'}} type="radio" name="payment" value="mercadopago" />
                     </Accordion.Header>
                     <Accordion.Body>
                         You will be redirected to the Mercado Pago page. (beta)

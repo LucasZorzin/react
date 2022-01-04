@@ -8,7 +8,7 @@ export default function ItemList(props) {
         <>
         <div className='products-background'>
             <div className='txt1 center pt-4 pb-4'><img className='products-img' src={products} alt="products"/></div>
-            <div className='row mx-5 px-5'>
+            <div className='row mx-5 px-0 px-lg-5'>
                 {props.list.map((item, index) => {
                     return (
                         <Item key={index} item={item} />

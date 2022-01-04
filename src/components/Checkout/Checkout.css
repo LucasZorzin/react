@@ -1,16 +1,16 @@
-.checkout-container{
+.checkout-container {
     display: flex;
     justify-content: center;
 }
-.fin{
+.fin {
     visibility: hidden;
     opacity: 0;
     display: none;
 }
-.fin{
+.fin {
     background-color: red;
 }
-.order-confirm{
+.order-confirm {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,55 +22,71 @@
     margin: auto;
 }
 
-.title-order{
+.title-order {
     text-transform: uppercase;
     font-size: 1rem;
     color: #fa43de;
-    font-family: 'Poppins', Arial;
+    font-family: "Poppins", Arial;
     font-weight: 500;
 }
 
-input{
+input {
     border: none;
     background-color: transparent;
     outline: 2px solid #ced4da;
     transition: 0.2s all ease;
     width: -webkit-fill-available;
 }
-input:focus, input:active{
+input:focus,
+input:active {
     outline: 2px solid #fa43de9d;
 }
-select{
+select {
     width: -webkit-fill-available;
     background-color: transparent;
     outline: 2px solid #ced4da;
     border: none;
 }
-select:focus, select:active{
+select:focus,
+select:active {
     outline: 2px solid #fa43de9d;
 }
-form div{
+form div {
     padding: 10px 0;
 }
 
-label{
-    white-space:normal;
+label {
+    white-space: normal;
 }
-.btn-pink{
+.btn-pink {
     background-color: #fa43de9d;
     color: white;
 }
 
-.btn-finish{
-    background-color: #fa43de9d!important;
+.btn-finish {
+    background-color: #fa43de9d !important;
     border: none;
     text-transform: uppercase;
-    padding: 10px 50px;   
+    padding: 10px 50px;
     margin: 0 0 50px 0;
     width: 100%;
-    transition: .5s all ease;
+    transition: 0.5s all ease;
 }
 
-.btn-finish:hover{
+.btn-finish:hover {
     background-color: #ff84ed9d;
+}
+
+/* SMARTPHONE */
+@media (max-width: 576px) {
+    .select-payment {
+        display: flex;
+        align-items: center;
+        justify-content: center ;
+        text-align: center ;
+    }
+    .card-cart {
+        padding: 51px 0;
+        width: -webkit-fill-available;
+    }
 }

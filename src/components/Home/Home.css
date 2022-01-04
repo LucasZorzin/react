@@ -1,13 +1,13 @@
-.home{
+.home {
     height: 100vh;
-    width: 100vw!important;
+    width: 100vw !important;
     overflow: hidden;
     background-color: #ffecf5;
 }
 
-.home h3{
+.home h3 {
     font-size: 1.7rem;
-    font-family: 'Abel';
+    font-family: "Abel";
     text-transform: capitalize;
     font-weight: 700;
     position: absolute;
@@ -19,9 +19,9 @@
     justify-content: center;
     align-content: center;
 }
-.home p{
+.home p {
     font-size: 1rem;
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-weight: 300;
     letter-spacing: -0.5px;
     position: absolute;
@@ -33,31 +33,31 @@
     justify-content: center;
     align-content: center;
 }
-.home-description{
+.home-description {
     text-align: center;
 }
-.logo{
+.logo {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 9%;
 }
 
-.logo img{
+.logo img {
     width: 100px;
 }
 
-.guitar1{
+.guitar1 {
     position: fixed;
     bottom: 0;
     width: 45%;
     height: 100%;
     left: -100px;
-    object-fit:cover;
+    object-fit: cover;
     overflow: hidden;
 }
 
-.guitar2{
+.guitar2 {
     position: fixed;
     bottom: -30px;
     right: -50px;
@@ -67,15 +67,22 @@
     overflow: hidden;
 }
 
-.productos{
+.guitar1Cel {
+    display: none;
+}
+.guitar2Cel {
+    display: none;
+}
+
+.productos {
     position: relative;
     z-index: 2;
     background-color: #ffecf5;
 }
 
-
 @media (max-width: 1485px) {
-    .guitar1,.guitar2{
+    .guitar1,
+    .guitar2 {
         object-fit: fill;
     }
 }
@@ -142,83 +149,90 @@
 }
 
 /* Section img */
-.img1{
+.img1 {
     display: flex;
     justify-content: flex-end;
 }
-.img1 img{
+.img1 img {
     width: 60%;
 }
-.txt1{
+.txt1 {
     display: flex;
     align-content: center;
     align-items: center;
     justify-content: flex-start;
 }
-.txt1 h4{
-    font-family: 'Poppins',Arial;
+.txt1 h4 {
+    font-family: "Poppins", Arial;
     font-weight: 400;
     color: #c38686;
     font-size: 2.25rem;
     line-height: 46px;
 }
 
-.img2{
+.img2 {
     display: flex;
     justify-content: flex-start;
 }
-.img2 img{
+.img2 img {
     width: 60%;
 }
-.txt2{
+.txt2 {
     display: flex;
     align-content: center;
     align-items: center;
     justify-content: flex-end;
 }
-.txt2 h4{
-    font-family: 'Poppins',Arial;
+.txt2 h4 {
+    font-family: "Poppins", Arial;
     font-weight: 400;
     color: #c38686;
     font-size: 2.25rem;
     line-height: 46px;
     margin-left: 40%;
 }
+.img3Cel{
+    display: none;
+}
 
 /* SMARTPHONE */
 @media (max-width: 576px) {
-    .logo{
+    .logo {
         margin-top: 40%;
     }
     .home__content-a {
         position: initial;
     }
-    #parallax{
-        padding-top: 30%;
+    #parallax {
+        padding-top: 20%;
     }
-    .home h3{
+    .home h3 {
         position: initial;
     }
-    .home p{
+    .home p {
         position: initial;
     }
     .guitar2 {
-        position: relative;
-        bottom: -65%;
-        right: -54%;
-        width: 65%;
-        height: 35%;
-        object-fit: fill;
-        overflow: hidden;
+        display: none;
     }
     .guitar1 {
+        display: none;
+    }
+    .guitar1Cel {
+        display: initial;
+        width: 90%;
         position: absolute;
-        bottom: 0;
-        width: 45%;
-        height: 25%;
-        left: -5%;
-        object-fit: fill;
-        overflow: hidden;
+        bottom: -100px;
+        left: -30px;
+        z-index: 4;
+    }
+    .guitar2Cel {
+        display: initial;
+        width: 62%;
+        position: absolute;
+        bottom: -4%;
+        right: 0;
+        z-index: 3;
     }
     .img1 img {
         width: 100%;
@@ -226,25 +240,26 @@
     .img2 img {
         width: 100%;
     }
-    .responsive-home{
-        transform: translate(0, -105%);
+    .img3Pc{
+        display: none;
     }
-    .productos-responsive{
-        padding-top: 85px !important;
+    .img3Cel{
+        display: initial;
     }
-    .productos{
+    .productos-responsive {
+        padding-top: 143px !important;
+    }
+    .productos {
         padding: 0 5%;
     }
 
     .txt2 {
         transform: translate(2%, 0px);
     }
-    .txt1 h4, .txt2 h4{
+    .txt1 h4,
+    .txt2 h4 {
         font-size: 2rem;
     }
-    
-
-
 }
 
 /* TABLET
