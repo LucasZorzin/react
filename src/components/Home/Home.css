@@ -96,6 +96,7 @@
     right: 0;
     left: 0;
     margin: auto;
+    z-index: 10;
 }
 .home__content-a .home__content-a-btn {
     font-family: "Poppins", Arial, sans-serif;
@@ -115,6 +116,7 @@
     cursor: pointer;
     position: absolute;
     overflow: hidden;
+    z-index: 10;
     transition: 0.4s all ease-in-out;
 }
 .home__content-a .home__content-a-btn:hover {
@@ -228,7 +230,7 @@
     }
     .guitar2Cel {
         display: initial;
-        width: 62%;
+        width: 57%;
         position: absolute;
         bottom: -8%;
         right: 0;
