@@ -86,7 +86,7 @@ label {
         text-align: center ;
     }
     .card-cart {
-        padding: 51px 0;
+        padding: 51px 7px 51px 0;
         width: -webkit-fill-available;
     }
 }
