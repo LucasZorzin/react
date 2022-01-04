@@ -198,7 +198,7 @@
 /* SMARTPHONE */
 @media (max-width: 576px) {
     .logo {
-        margin-top: 40%;
+        margin-top: 20%;
     }
     .home__content-a {
         position: initial;
@@ -230,7 +230,7 @@
         display: initial;
         width: 62%;
         position: absolute;
-        bottom: -4%;
+        bottom: -8%;
         right: 0;
         z-index: 3;
     }
